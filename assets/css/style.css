@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Vazirmatn-Medium";
+  src: url(../font/Vazirmatn-Medium.eot) format("eot"),
+    url(../font/Vazirmatn-Medium.woff) format("woff"),
+    url(../font/Vazirmatn-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(63, 17, 230, 1) 71%,
+    rgba(233, 11, 11, 1) 100%
+  );
+  height: 100vh;
+}
+ul {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+ul li {
+  margin: 30px;
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  box-shadow: -20px 20px 10px rgba(64, 61, 61, 0.5);
+  transform: rotate(-30deg) skew(30deg) translate(0, 0);
+  -webkit-transform: rotate(-30deg) skew(30deg) translate(0, 0);
+  -moz-transform: rotate(-30deg) skew(30deg) translate(0, 0);
+  -ms-transform: rotate(-30deg) skew(30deg) translate(0, 0);
+  -o-transform: rotate(-30deg) skew(30deg) translate(0, 0);
+  transition: 0.4s;
+  cursor: pointer;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background-color: rgb(168, 163, 163);
+  transform: rotate(0) skewY(-45deg);
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(168, 163, 163);
+  transform: rotate(0) skew(-45deg);
+}
+ul li:hover {
+  transform: rotate(-30deg) skew(30deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+ul li:hover a {
+  color: white;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(34, 33, 33);
+  position: absolute;
+  font-size: 18px;
+  top: 25px;
+  left: 45px;
+  letter-spacing: 5px;
+}
+.f:hover {
+  background-color: #0067a5;
+}
+.f:hover::after {
+  background-color: #0067a5;
+}
+.f:hover::before {
+  background-color: #0067a5;
+}
+.t:hover {
+  background-color: rgb(9, 156, 225);
+}
+.t:hover::after {
+  background-color: rgb(9, 156, 225);
+}
+.t:hover::before {
+  background-color: rgb(9, 156, 225);
+}
+.i:hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.i:hover::after {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.i:hover::before {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.w:hover {
+  background-color: rgb(3, 186, 3);
+}
+.w:hover::after {
+  background-color: rgb(3, 186, 3);
+}
+.w:hover::before {
+  background-color: rgb(3, 186, 3);
+}
